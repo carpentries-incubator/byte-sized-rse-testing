@@ -4,16 +4,18 @@ This is a Byte-Sized RSE lesson on unit testing code, part of the [Byte-Sized RS
 
 ### Questions
 
-- What are the benefits of collaborative code development?
-- How can collaborating improve the quality and effectiveness of your code?
-- What practices and tools support effective collaboration?
-- Why should collaborative tools and workflows be adopted early in a project?
+- What is a unit test, and why is it important for improving the reliability and reproducibility of research code?
+- How can we identify which parts of code should be tested?
+- How do we write and run a simple unit test for a given function?
+- How can we test that code handles errors or invalid inputs correctly?
+- What makes a good, maintainable unit test?
 
 ### Learning Objectives
 
 At the end of this lesson, learners should be able to:
 
-- Identify benefits of coding with others, including improved code quality and shared ownership.
-- Recognise common collaborative practices such as code review, pair programming, and version control.
-- Understand how early adoption of collaborative tools helps prepare for scaling up development.
-- Apply the practical collaborative strategy *code review* in a software project.
+- Describe what unit testing is and explain why it matters for software quality.
+- Examine example code and identify where and how unit tests could be applied.
+- Write a simple unit test for a function and integrate it into their project.
+- Recognise common error/exception conditions in code and write tests that handle/expect such errors.
+- Evaluate a test suite in terms of coverage.
