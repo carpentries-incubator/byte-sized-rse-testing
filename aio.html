@@ -383,9 +383,6 @@ software quality.</li>
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="code-testing">Code testing<a class="anchor" aria-label="anchor" href="#code-testing"></a>
-</h2>
-<hr class="half-width">
 <p>Code testing is the process of verifying that your code behaves as
 expected and continues to do so as it evolves. It helps catch bugs
 early, ensures changes do not unintentionally break existing
@@ -405,9 +402,9 @@ existing behavior) and property-based testing (to test a wide range of
 inputs automatically). Finally, we will cover mocking, a technique used
 to isolate code during tests by simulating the behavior of external
 dependencies.</p>
-<div class="section level3">
-<h3 id="why-test-your-code">Why test your code?<a class="anchor" aria-label="anchor" href="#why-test-your-code"></a>
-</h3>
+<section><h2 class="section-heading" id="why-test-your-code">Why test your code?<a class="anchor" aria-label="anchor" href="#why-test-your-code"></a>
+</h2>
+<hr class="half-width">
 <p>Being able to demonstrate that a process generates the right results
 is important in any field of research, whether it is software generating
 those results or not. So when writing software we need to ask ourselves
@@ -433,10 +430,9 @@ bugs early and confirming that new changes do not break existing
 functionality, testing improves code quality, reduces the risk of errors
 in production, and makes future development and long-term maintenance
 faster and safer.</p>
-</div>
-<div class="section level3">
-<h3 id="types-of-testing---levels">Types of Testing - Levels<a class="anchor" aria-label="anchor" href="#types-of-testing---levels"></a>
-</h3>
+</section><section><h2 class="section-heading" id="levels-of-code-testing">Levels of Code Testing<a class="anchor" aria-label="anchor" href="#levels-of-code-testing"></a>
+</h2>
+<hr class="half-width">
 <p>Testing can be performed at different code levels, each serving a
 distinct purpose to ensure software behaves correctly at various stages
 of execution. Together, these testing levels provide a structured
@@ -455,10 +451,9 @@ complete, integrated system. This type of testing focuses on validating
 the entire application’s functionality from end to end, typically from
 the user’s perspective, including inputs, outputs, and how the system
 behaves under various conditions.</p>
-</div>
-<div class="section level3">
-<h3 id="types-of-testing---approaches">Types of Testing - Approaches<a class="anchor" aria-label="anchor" href="#types-of-testing---approaches"></a>
-</h3>
+</section><section><h2 class="section-heading" id="approaches-to-code-testing">Approaches to Code Testing<a class="anchor" aria-label="anchor" href="#approaches-to-code-testing"></a>
+</h2>
+<hr class="half-width">
 <p>Different approaches to code testing help ensure that software
 behaves as expected under a range of conditions. When the expected
 output of a function or program is known, tests can directly check that
@@ -473,9 +468,9 @@ helps detect when previously working functionality breaks due to recent
 changes in the code. By rerunning earlier tests, developers can catch
 and address these regressions early, maintaining software stability over
 time.</p>
-<div class="section level4">
-<h4 id="mocking">Mocking<a class="anchor" aria-label="anchor" href="#mocking"></a>
-</h4>
+<div class="section level3">
+<h3 id="mocking">Mocking<a class="anchor" aria-label="anchor" href="#mocking"></a>
+</h3>
 <p>When running tests, you often want to focus on testing a specific
 piece of functionality, but dependencies on external objects or
 functions can complicate this, as you cannot always be sure they work as
@@ -496,7 +491,6 @@ can mock the file-writing object, so instead of creating an actual file,
 the mocked object stores the “written” data. This enables you to verify
 that the data written is as expected, without actually creating a file,
 making tests more controlled and efficient.</p>
-</div>
 </div>
 </section><section><h2 class="section-heading" id="related-practices">Related Practices<a class="anchor" aria-label="anchor" href="#related-practices"></a>
 </h2>
