@@ -8,7 +8,8 @@ This is a Byte-Sized RSE lesson on code review, part of the [Byte-Sized RSE Seri
 
 At the end of this lesson, learners should be able to:
 
-- Identify benefits of coding with others, including improved code quality and shared ownership.
-- Recognise common collaborative practices such as code review, pair programming, and version control.
-- Understand how early adoption of collaborative tools helps prepare for scaling up development.
-- Apply the practical collaborative strategy *code review* in a software project.
+- Describe what unit testing is and explain why it matters for software quality.
+- Examine example code and identify where and how unit tests could be applied.
+- Write a simple unit test for a function and integrate it into their project.
+- Recognise common error/exception conditions in code and write tests that handle/expect such errors.
+- Evaluate a test suite in terms of coverage.
