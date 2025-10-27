@@ -10,16 +10,12 @@ exercises: 0
 - At what levels of granularity can we test our code?
 - What different approaches to code testing exist?
 
-### Learning Objectives
-
-- Describe what unit testing is and explain why it matters for software quality.
-- Describe different approaches and levels of testing.
-
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- FIXME
+- Describe what unit testing is and explain why it matters for software quality.
+- Describe different approaches and levels of testing.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
