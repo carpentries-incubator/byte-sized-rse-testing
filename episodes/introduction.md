@@ -6,7 +6,14 @@ exercises: 0
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- FIXME
+- What is a unit test, and why is it important for improving the reliability and reproducibility of research code?
+- At what levels of granularity can we test our code?
+- What different approaches to code testing exist?
+
+### Learning Objectives
+
+- Describe what unit testing is and explain why it matters for software quality.
+- Describe different approaches and levels of testing.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
