@@ -1,22 +1,32 @@
-# This template CITATION.cff file was generated with cffinit.
-# Visit https://bit.ly/cffinit to replace its contents
-# with information about your lesson.
-# Remember to update this file periodically, 
-# ensuring that the author list and other fields remain accurate.
-
 cff-version: 1.2.0
-title: FIXME
-message: >-
-  Please cite this lesson using the information in this file
-  when you refer to it in publications, and/or if you
-  re-use, adapt, or expand on the content in your own
-  training material.
-type: dataset
+message: "If you use this material, please cite it as below."
+title: "Byte-Sized RSE: Unit Testing Code"
+version: "alpha"
+doi: ""
+url: "https://github.com/carpentries-incubator/byte-sized-rse-testing"
 authors:
-  - given-names: FIXME
-    family-names: FIXME
-abstract: >-
-  FIXME Replace this with a short abstract describing the
-  lesson, e.g. its target audience and main intended
-  learning objectives.
-license: CC-BY-4.0
+  - given-names: "Jeremy"
+    family-names: "Cohen"
+    orcid: "https://orcid.org/0000-0003-4312-2537"
+    affiliation: ""
+    url: "https://github.com/jcohen02"
+  - given-names: "Steve"
+    family-names: "Crouch"
+    orcid: "https://orcid.org/0000-0001-8985-6814"
+    affiliation: ""
+    url: "https://github.com/steve-crouch"
+  - given-names: "Aleksandra"
+    family-names: "Nenadic"
+    orcid: "https://orcid.org/0000-0002-2269-3894"
+    affiliation: ""
+    url: "https://github.com/anenadic"
+date-released: "2025-10-23"
+license: "CC-BY-4.0"
+type: "generic"
+keywords:
+  - research software engineering
+  - RSE
+  - IDE
+  - Visual Studio Code
+  - debugging
+repository-code: "https://github.com/carpentries-incubator/byte-sized-rse-testing"
