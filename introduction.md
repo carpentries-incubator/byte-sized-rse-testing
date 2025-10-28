@@ -1,34 +1,37 @@
 ---
-title: "Unit Testing Code"
+title: "Lesson 5: Unit Testing Code"
 teaching: 15
 exercises: 0
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- What is a unit test, and why is it important for improving the reliability and reproducibility of research code?
-- At what levels of granularity can we test our code?
-- What different approaches to code testing exist?
+- Why should I test my code?
+- What is the role of automated testing?
+- What are the different types of automated tests?
+- What is the structure of a unit test?
+- What is test "mocking"?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Describe what unit testing is and explain why it matters for software quality.
-- Describe different approaches and levels of testing.
+- Explain the reasons why testing is important
+- Describe the three main types of tests and what each are used for
+- Describe the practice of test “mocking” and when to use it
+- Obtain example code repository and run existing unit tests
+- Describe the format of a unit test written for the Pytest testing framework
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-Code testing is the process of verifying that your code behaves as expected and continues to do so as it evolves. 
-It helps catch bugs early, ensures changes do not unintentionally break existing functionality, and supports the development of more robust and maintainable software. 
-Whether you’re working on a small script or a large application, incorporating testing into your workflow builds confidence in your code and makes collaboration and future updates much easier.
+Testing is a critical part of writing reliable, maintainable code — especially in collaborative or research environments where reproducibility and correctness are key. In this session, we will explore why testing matters, and introduce different levels of testing — from small, focused unit tests, to broader integration and system tests that check how components work together. We will also look at testing approaches such as regression testing (to ensure changes do not break existing behavior) and property-based testing (to test a wide range of inputs automatically). Finally, we will cover mocking, a technique used to isolate code during tests by simulating the behavior of external dependencies.
 
-Testing is a critical part of writing reliable, maintainable code — especially in collaborative or research environments where reproducibility and correctness are key. 
-In this lesson, we will explore why testing matters, and introduce different levels of testing — from small, focused unit tests, to broader integration and system tests that check how components work together. 
-We will also look at testing approaches such as regression testing (to ensure changes do not break existing behavior) and property-based testing (to test a wide range of inputs automatically). 
-Finally, we will cover mocking, a technique used to isolate code during tests by simulating the behavior of external dependencies.
 
-## Why test your code?
+## Introduction to testing
+
+Code testing is the process of verifying that your code behaves as expected and continues to do so as it evolves. It helps catch bugs early, ensures changes do not unintentionally break existing functionality, and supports the development of more robust and maintainable software. Whether you’re working on a small script or a large application, incorporating testing into your workflow builds confidence in your code and makes collaboration and future updates much easier.
+
+### Why test your code?
 
 Being able to demonstrate that a process generates the right results is important in any field of research, whether it is software generating those results or not. So when writing software we need to ask ourselves some key questions:
 
@@ -43,7 +46,7 @@ As a codebase grows, debugging becomes more challenging, and new code may introd
 Having well-defined tests for our software helps ensure your software works correctly, reliably, and consistently over time. By identifying bugs early and confirming that new changes do not break existing functionality, testing improves code quality, reduces the risk of errors in production, and makes future development and long-term maintenance faster and safer. 
 
 
-## Levels of Code Testing
+### Levels of Code Testing
 
 Testing can be performed at different code levels, each serving a distinct purpose to ensure software behaves correctly at various stages of execution. Together, these testing levels provide a structured approach to improving software quality and reliability.
 
@@ -53,7 +56,7 @@ Testing can be performed at different code levels, each serving a distinct purpo
 
 At the highest level, system testing evaluates the software as a complete, integrated system. This type of testing focuses on validating the entire application's functionality from end to end, typically from the user’s perspective, including inputs, outputs, and how the system behaves under various conditions. 
 
-## Approaches to Code Testing 
+### Approaches to Code Testing 
 
 Different approaches to code testing help ensure that software behaves as expected under a range of conditions. When the expected output of a function or program is known, tests can directly check that the results match fixed values or fall within a defined confidence interval. 
 
@@ -61,7 +64,7 @@ However, for cases where exact outputs are not predictable — such as simulatio
 
 Another important approach is *regression testing*, which helps detect when previously working functionality breaks due to recent changes in the code. By rerunning earlier tests, developers can catch and address these regressions early, maintaining software stability over time.
 
-### Mocking
+#### Mocking
 
 When running tests, you often want to focus on testing a specific piece of functionality, but dependencies on external objects or functions can complicate this, as you cannot always be sure they work as expected. Mocking addresses this by allowing you to replace those dependencies with "mocked" objects or functions that behave according to your instructions. So, *mocking* is a testing approach used to isolate the unit of code being tested by replacing its dependencies with simplified, controllable versions — known as *mocks*. 
 
