@@ -56,7 +56,7 @@ Testing can be performed at different code levels, each serving a distinct purpo
 
 At the highest level, system testing evaluates the software as a complete, integrated system. This type of testing focuses on validating the entire application's functionality from end to end, typically from the user’s perspective, including inputs, outputs, and how the system behaves under various conditions. 
 
-### Types of Testing - Approaches 
+### Approaches to Code Testing 
 
 Different approaches to code testing help ensure that software behaves as expected under a range of conditions. When the expected output of a function or program is known, tests can directly check that the results match fixed values or fall within a defined confidence interval. 
 
