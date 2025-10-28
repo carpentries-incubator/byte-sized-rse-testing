@@ -46,7 +46,7 @@ As a codebase grows, debugging becomes more challenging, and new code may introd
 Having well-defined tests for our software helps ensure your software works correctly, reliably, and consistently over time. By identifying bugs early and confirming that new changes do not break existing functionality, testing improves code quality, reduces the risk of errors in production, and makes future development and long-term maintenance faster and safer. 
 
 
-### Types of Testing - Levels
+### Levels of Code Testing
 
 Testing can be performed at different code levels, each serving a distinct purpose to ensure software behaves correctly at various stages of execution. Together, these testing levels provide a structured approach to improving software quality and reliability.
 
