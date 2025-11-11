@@ -19,3 +19,7 @@ At the end of this lesson, learners should be able to:
 - Write a simple unit test for a function and integrate it into their project.
 - Recognise common error/exception conditions in code and write tests that handle/expect such errors.
 - Evaluate a test suite in terms of coverage.
+
+### Slides
+
+[Slides](https://docs.google.com/presentation/d/1qNyDV3VDwv6Z3RHwfn5hL0pFxzK_DsWN3bPMjwV7Uoc/edit?usp=sharing) available under CC BY 4.0 licence.
