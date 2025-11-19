@@ -64,11 +64,11 @@ An additional benefit is that successfully running our unit tests can also give 
 
 Let's illustrate another key advantage of having unit tests.
 Let's assume during development we find an error in our code.
-For example, if we run our code with `factorial(10000)` our Python program from within the Python interpreter, it crashes with an exception:
+For example, if we run our code with `factorial(1080)` our Python program from within the Python interpreter, it crashes with an exception:
 
 ```python
 >>> from mymath.factorial import factorial
->>> factorial(10000)
+>>> factorial(1080)
 ```
 
 ```output
@@ -88,7 +88,7 @@ RecursionError: maximum recursion depth exceeded in comparison
 
 It turns out that our factorial function is *recursive*,
 which means it calls itself.
-In order to compute the factorial of 10000, it does that a lot.
+In order to compute the factorial of 1080, it does that a lot.
 Python has a default limit for recursion of 1000,
 hence the exception,
 which is a bit of a limitation in our implementation.
@@ -241,6 +241,8 @@ So make sure you work with known 'good' test data which has been verified to be 
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
-- FIXME
+- Unit tests check that functions behave as expected
+- Re-running tests ensures code changes don't break behaviour
+- Use edge cases and different paths through your code to create effective tests
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
