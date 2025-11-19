@@ -31,7 +31,13 @@ Edit the `tests/test_factorial.py` file again:
     self.assertEqual(factorial(5), 120)
 ```
 
-[CHECKPOINT - who's finished editing the file Yes/No]
+:::::::::::::::::::::::::::::::::::::::::::::::: instructor
+
+### Checkpoint: Attendee progress
+
+Who has finished editing the file?
+
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 And then we can run it exactly as before, in the shell
 
@@ -58,7 +64,13 @@ Then, whenever we make changes to our code,
 we can rerun our tests to make sure we haven't broken anything.
 An additional benefit is that successfully running our unit tests can also give others confidence that our code works as expected.
 
-[CHECKPOINT - who managed to run this with their new unit test Yes/No]
+:::::::::::::::::::::::::::::::::::::::::::::::: instructor
+
+### Checkpoint: Running the new test
+
+Who has managed to run this with their new unit test?
+
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Change our Implementation, and Re-test
 
@@ -143,7 +155,13 @@ So again, each time we change our code,
 whether it's making small or large changes,
 we retest and check they all pass
 
-[CHECKPOINT - who managed to write unit test and run it? Yes/No]
+:::::::::::::::::::::::::::::::::::::::::::::::: instructor
+
+### Checkpoint: Update the code and run tests again
+
+Who has managed to write the unit test and run it?
+
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: callout
 
