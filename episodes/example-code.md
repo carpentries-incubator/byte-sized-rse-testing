@@ -143,7 +143,13 @@ Ran 1 test in 0.000s
 OK
 ```
 
-[CHECKPOINT - who's run the tests and got this output? Yes/No]
+:::::::::::::::::::::::::::::::::::::::::::::::: instructor
+
+### Checkpoint: Attendee progress
+
+Who has run the tests and got this output?
+
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 So what happens?
 We see a single `.`,  we see a message that says it ran very quickly, and `OK`.
