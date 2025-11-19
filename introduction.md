@@ -8,7 +8,6 @@ exercises: 0
 
 - Why should I test my code?
 - What is the role of automated testing?
-- What are the different types of automated tests?
 - What is the structure of a unit test?
 - What is test "mocking"?
 
@@ -27,7 +26,7 @@ exercises: 0
 Testing is a critical part of writing reliable, maintainable code — especially in collaborative or research environments where reproducibility and correctness are key. In this session, we will explore why testing matters, and introduce different levels of testing — from small, focused unit tests, to broader integration and system tests that check how components work together. We will also look at testing approaches such as regression testing (to ensure changes do not break existing behavior) and property-based testing (to test a wide range of inputs automatically). Finally, we will cover mocking, a technique used to isolate code during tests by simulating the behavior of external dependencies.
 
 
-## Introduction to testing
+## Introduction to code testing
 
 Code testing is the process of verifying that your code behaves as expected and continues to do so as it evolves. It helps catch bugs early, ensures changes do not unintentionally break existing functionality, and supports the development of more robust and maintainable software. Whether you’re working on a small script or a large application, incorporating testing into your workflow builds confidence in your code and makes collaboration and future updates much easier.
 
