@@ -31,7 +31,13 @@ Edit the `tests/test_factorial.py` file again:
     self.assertEqual(factorial(5), 120)
 ```
 
-[CHECKPOINT - who's finished editing the file Yes/No]
+:::::::::::::::::::::::::::::::::::::::::::::::: instructor
+
+### Checkpoint: Attendee progress
+
+Who has finished editing the file?
+
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 And then we can run it exactly as before, in the shell
 
@@ -58,37 +64,44 @@ Then, whenever we make changes to our code,
 we can rerun our tests to make sure we haven't broken anything.
 An additional benefit is that successfully running our unit tests can also give others confidence that our code works as expected.
 
-[CHECKPOINT - who managed to run this with their new unit test Yes/No]
+:::::::::::::::::::::::::::::::::::::::::::::::: instructor
+
+### Checkpoint: Running the new test
+
+Who has managed to run this with their new unit test?
+
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Change our Implementation, and Re-test
 
 Let's illustrate another key advantage of having unit tests.
 Let's assume during development we find an error in our code.
-For example, if we run our code with `factorial(10000)` our Python program from within the Python interpreter, it crashes with an exception:
+For example, if we run our code with `factorial(1080)` our Python program from within the Python interpreter, it crashes with an exception:
 
 ```python
 >>> from mymath.factorial import factorial
->>> factorial(10000)
+>>> factorial(1080)
 ```
 
 ```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-  File "/home/steve/factorial-example/mymath/factorial.py", line 11, in factorial
+  File "/Users/user/Documents/factorial-example/mymath/factorial.py", line 11, in factorial
     return  n * factorial(n-1)
-  File "/home/steve/factorial-example/mymath/factorial.py", line 11, in factorial
+                ^^^^^^^^^^^^^^
+  File "/Users/user/Documents/factorial-example/mymath/factorial.py", line 11, in factorial
     return  n * factorial(n-1)
-  File "/home/steve/factorial-example/mymath/factorial.py", line 11, in factorial
+                ^^^^^^^^^^^^^^
+  File "/Users/user/Documents/factorial-example/mymath/factorial.py", line 11, in factorial
     return  n * factorial(n-1)
-  [Previous line repeated 995 more times]
-  File "/home/steve/factorial-example/mymath/factorial.py", line 8, in factorial
-    if n == 0 or n == 1:
-RecursionError: maximum recursion depth exceeded in comparison
+                ^^^^^^^^^^^^^^
+  [Previous line repeated 996 more times]
+RecursionError: maximum recursion depth exceeded
 ```
 
 It turns out that our factorial function is *recursive*,
 which means it calls itself.
-In order to compute the factorial of 10000, it does that a lot.
+In order to compute the factorial of 1080, it does that a lot.
 Python has a default limit for recursion of 1000,
 hence the exception,
 which is a bit of a limitation in our implementation.
@@ -143,7 +156,13 @@ So again, each time we change our code,
 whether it's making small or large changes,
 we retest and check they all pass
 
-[CHECKPOINT - who managed to write unit test and run it? Yes/No]
+:::::::::::::::::::::::::::::::::::::::::::::::: instructor
+
+### Checkpoint: Update the code and run tests again
+
+Who has managed to write the unit test and run it?
+
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: callout
 
@@ -241,6 +260,8 @@ So make sure you work with known 'good' test data which has been verified to be 
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
-- FIXME
+- Unit tests check that functions behave as expected
+- Re-running tests ensures code changes don't break behaviour
+- Use edge cases and different paths through your code to create effective tests
 
 ::::::::::::::::::::::::::::::::::::::::::::::::

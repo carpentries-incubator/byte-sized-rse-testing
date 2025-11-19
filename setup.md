@@ -23,7 +23,7 @@ for installing [shell](https://carpentries.github.io/workshop-template/install_i
 
 ### Python
 
-Python version 3.8 or above is required. Type `python -v` at your shell prompt and press enter to see what version of Python is installed on your system.
+Python version 3.8 or above is required. Type `python -V` (or `python3 -V` on Mac) at your shell prompt and press enter to see what version of Python is installed on your system.
 If you do not have Python installed on your system and require assistance with the installation, you can take a look at [the instructions provided by Software Carpentry](https://swcarpentry.github.io/python-novice-inflammation/#install-python)
 for installing Python in preparation for undertaking their Python lesson.
 

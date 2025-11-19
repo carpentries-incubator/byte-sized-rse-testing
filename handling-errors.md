@@ -4,15 +4,18 @@ teaching: 10
 exercises: 0
 ---
 
-:::::::::::::::::::::::::::::::::::::: questions 
+:::::::::::::::::::::::::::::::::::::: questions
 
-- FIXME
+- How to write tests for code that might have an expected error?
+- How can tests check that the correct exception is raised?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- FIXME
+- Understand why we should test error cases
+- Use `assertRaises` to test that an error is raised
+- Add a precondition to validate input and raise appropriate errors
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -67,6 +70,14 @@ Traceback (most recent call last):
 ValueError: Only use non-negative integers.
 ```
 
+:::::::::::::::::::::::::::::::::::::::::::::::: instructor
+
+### Checkpoint: Attendee progress
+
+Who has added the precondition and run the code?
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
 Sure enough, we get our exception as desired.
 But how do we test for this in a unit test,
 since this is an exception, not a value?
@@ -101,6 +112,14 @@ Ran 3 tests in 0.000s
 OK
 ```
 
+:::::::::::::::::::::::::::::::::::::::::::::::: instructor
+
+### Checkpoint: Add a unit test for errors
+
+Who has added the new test and run it?
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
 ## Brief Summary
 
 So we now have the beginnings of a test suite!
@@ -111,8 +130,10 @@ So the overall process of development becomes:
 - Potentially add new tests to test any new functionality
 - Re-run all our tests
 
-::::::::::::::::::::::::::::::::::::: keypoints 
+::::::::::::::::::::::::::::::::::::: keypoints
 
-- FIXME
+- Code should validate their inputs and raise clear exceptions when needed
+- `unittest` can test for exceptions with `assertRaises`
+- Testing errors is part of good testing practice
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
