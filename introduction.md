@@ -45,7 +45,7 @@ As a codebase grows, debugging becomes more challenging, and new code may introd
 Having well-defined tests for our software helps ensure your software works correctly, reliably, and consistently over time. By identifying bugs early and confirming that new changes do not break existing functionality, testing improves code quality, reduces the risk of errors in production, and makes future development and long-term maintenance faster and safer. 
 
 
-### Levels of Code Testing
+## Levels of Code Testing
 
 Testing can be performed at different code levels, each serving a distinct purpose to ensure software behaves correctly at various stages of execution. Together, these testing levels provide a structured approach to improving software quality and reliability.
 
@@ -55,7 +55,7 @@ Testing can be performed at different code levels, each serving a distinct purpo
 
 At the highest level, system testing evaluates the software as a complete, integrated system. This type of testing focuses on validating the entire application's functionality from end to end, typically from the user’s perspective, including inputs, outputs, and how the system behaves under various conditions. 
 
-### Approaches to Code Testing 
+## Approaches to Code Testing 
 
 Different approaches to code testing help ensure that software behaves as expected under a range of conditions. When the expected output of a function or program is known, tests can directly check that the results match fixed values or fall within a defined confidence interval. 
 
@@ -63,7 +63,7 @@ However, for cases where exact outputs are not predictable — such as simulatio
 
 Another important approach is *regression testing*, which helps detect when previously working functionality breaks due to recent changes in the code. By rerunning earlier tests, developers can catch and address these regressions early, maintaining software stability over time.
 
-#### Mocking
+### Mocking
 
 When running tests, you often want to focus on testing a specific piece of functionality, but dependencies on external objects or functions can complicate this, as you cannot always be sure they work as expected. Mocking addresses this by allowing you to replace those dependencies with "mocked" objects or functions that behave according to your instructions. So, *mocking* is a testing approach used to isolate the unit of code being tested by replacing its dependencies with simplified, controllable versions — known as *mocks*. 
 
