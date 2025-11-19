@@ -4,15 +4,18 @@ teaching: 10
 exercises: 0
 ---
 
-:::::::::::::::::::::::::::::::::::::: questions 
+:::::::::::::::::::::::::::::::::::::: questions
 
-- FIXME
+- How to write tests for code that might have an expected error?
+- How can tests check that the correct exception is raised?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- FIXME
+- Understand why we should test error cases
+- Use `assertRaises` to test that an error is raised
+- Add a precondition to validate input and raise appropriate errors
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -113,6 +116,8 @@ So the overall process of development becomes:
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
-- FIXME
+- Code should validate their inputs and raise clear exceptions when needed
+- `unittest` can test for exceptions with `assertRaises`
+- Testing errors is part of good testing practice
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
