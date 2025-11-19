@@ -86,16 +86,17 @@ For example, if we run our code with `factorial(1080)` our Python program from w
 ```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-  File "/home/steve/factorial-example/mymath/factorial.py", line 11, in factorial
+  File "/Users/user/Documents/factorial-example/mymath/factorial.py", line 11, in factorial
     return  n * factorial(n-1)
-  File "/home/steve/factorial-example/mymath/factorial.py", line 11, in factorial
+                ^^^^^^^^^^^^^^
+  File "/Users/user/Documents/factorial-example/mymath/factorial.py", line 11, in factorial
     return  n * factorial(n-1)
-  File "/home/steve/factorial-example/mymath/factorial.py", line 11, in factorial
+                ^^^^^^^^^^^^^^
+  File "/Users/user/Documents/factorial-example/mymath/factorial.py", line 11, in factorial
     return  n * factorial(n-1)
-  [Previous line repeated 995 more times]
-  File "/home/steve/factorial-example/mymath/factorial.py", line 8, in factorial
-    if n == 0 or n == 1:
-RecursionError: maximum recursion depth exceeded in comparison
+                ^^^^^^^^^^^^^^
+  [Previous line repeated 996 more times]
+RecursionError: maximum recursion depth exceeded
 ```
 
 It turns out that our factorial function is *recursive*,
