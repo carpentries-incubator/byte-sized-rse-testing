@@ -22,8 +22,9 @@ At the end of this lesson, learners should be able to:
 
 ### Slides
 
-[Slides](https://docs.google.com/presentation/d/1qNyDV3VDwv6Z3RHwfn5hL0pFxzK_DsWN3bPMjwV7Uoc/edit?usp=sharing) available under CC BY 4.0 licence.
+- [Slides from RSC7, November 2025](https://docs.google.com/presentation/d/1qNyDV3VDwv6Z3RHwfn5hL0pFxzK_DsWN3bPMjwV7Uoc/edit?usp=sharing) available under CC BY 4.0 licence.
 
 ### Recordings
 
-- [Recording of the "Byte-Sized RSE: Unit Testing Code" session delivered at SSI's RSC7, 19 November 2025](https://www.youtube.com/watch?v=bDHdli_qh64)
+- [Recording from RSC7, November 2025](https://www.youtube.com/watch?v=bDHdli_qh64)
+- [Recording from RSC8, October 2026](https://youtu.be/0ozN-cbMNpo?si=pb5oNCpfobzrdmIG)
